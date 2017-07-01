@@ -45,10 +45,10 @@ class Game extends Component{
     this.cells = [];
 
     this.generateCells(props.width,props.height);
-    this.randomFill();
   }
 
   componentDidMount(){
+    this.randomFill();
     setTimeout(()=>{this.timer = setInterval(this.tick,this.speed);},1500);
   }
 
